@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    background-color: #1e1e2e;
+    margin: auto;
+    max-width: 540px;
+    text-align: justify;
+}
+
+h1 {
+    color: #fdebf3;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.6em;
+    font-weight: normal;
+}
+
+h2 {
+    color: #fdebf3;
+    text-decoration: underline;
+    text-decoration-color: #375a7f;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.1em;
+    font-weight: normal;
+    margin: 0;
+}
+
+p {
+    color: #fdebf3;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    hyphens: auto;
+    line-height: 1.5em;
+    margin-top: 6px;
+    text-indent: 1em;    
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: .8rem;
+}
+
+.title-link {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.title-link a {
+    color: #fdebf3;
+    text-decoration: none;
+}
+
+.title-link a:hover, a:focus {
+    text-decoration: underline;
+    text-decoration-color: #fdebf3;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+.nav-links {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    margin-top: .8rem;
+    text-align: center;
+}
+
+.nav-links a {
+    color: #fdebf3;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-links a:hover, a:focus {
+    text-decoration: underline;
+    text-decoration-color: #375a7f;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+}
+
