@@ -15,11 +15,11 @@ body {
 h1, h2 {
     font-family: 'Pacifico', cursive;
     font-weight: normal;
-    margin-bottom: 0;
 }
 
 h1 {
     font-size: 2.6em;
+    margin: 0;
 }
 
 h2 {
@@ -27,6 +27,7 @@ h2 {
     text-decoration-thickness: 4px;
     text-underline-offset: 6px;
     font-size: 2.1em;
+    margin-bottom: 0;
 }
 
 /* Paragraphs */
@@ -38,13 +39,11 @@ p {
     text-indent: 1em;
 }
 
-/* Small text */
-small {
-    background-color: #584966;
-    border-radius: 8px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 500;
-    padding: 0.5em 0.6em 0.3em;
+
+/* Gifs */
+.gif {
+    margin: 20px 0 0 0;
+    text-align: center;
 }
 
 /* Navigation Bar */
@@ -66,7 +65,7 @@ small {
 }
 
 .title-link a:hover, .nav-links a:hover, a:focus {
-    text-decoration: underline #fdebf3;
+    text-decoration: underline #375a7f;
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
 }
@@ -85,7 +84,10 @@ small {
 /* Media Query */
 @media only screen and (max-width: 600px) {
     body {
-        width: 400px;
+        width: 320px;
+    }
+    .nav-links a {
+        margin: 0 8px;
     }
 }
 
