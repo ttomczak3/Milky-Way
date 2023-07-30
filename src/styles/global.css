@@ -78,13 +78,16 @@ p {
 }
 
 .nav-links a {
-    margin: 0 15px;
+    margin: 0 14px;
 }
 
 /* Media Query */
 @media only screen and (max-width: 600px) {
     body {
         width: 320px;
+    }
+    .nav-bar {
+        display: initial;
     }
     .nav-links a {
         margin: 0 8px;
