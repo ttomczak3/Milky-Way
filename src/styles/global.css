@@ -1,62 +1,72 @@
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
+/* Global styles */
 body {
+    color: #fdebf3;
     background-color: #1e1e2e;
-    margin: auto;
     max-width: 540px;
+    margin: 0 auto;
     text-align: justify;
 }
 
-h1 {
-    color: #fdebf3;
+/* Headings */
+h1, h2 {
     font-family: 'Pacifico', cursive;
-    font-size: 2.6em;
     font-weight: normal;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 2.6em;
 }
 
 h2 {
-    color: #fdebf3;
-    text-decoration: underline;
-    text-decoration-color: #375a7f;
+    text-decoration: underline #375a7f;
     text-decoration-thickness: 4px;
     text-underline-offset: 6px;
-    font-family: 'Pacifico', cursive;
     font-size: 2.1em;
-    font-weight: normal;
-    margin: 0;
 }
 
+/* Paragraphs */
 p {
-    color: #fdebf3;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1em;
     hyphens: auto;
-    line-height: 1.5em;
-    margin-top: 6px;
-    text-indent: 1em;    
+    line-height: 1.5;
+    text-indent: 1em;
 }
 
+/* Small text */
+small {
+    background-color: #584966;
+    border-radius: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    padding: 0.5em 0.6em 0.3em;
+}
+
+/* Navigation Bar */
 .nav-bar {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: .8rem;
+    margin-top: 0.8rem;
 }
 
-.title-link {
+.title-link, .nav-links {
     font-family: 'Pacifico', cursive;
     font-size: 1.3rem;
     text-align: center;
 }
 
-.title-link a {
+.title-link a, .nav-links a {
     color: #fdebf3;
     text-decoration: none;
 }
 
-.title-link a:hover, a:focus {
-    text-decoration: underline;
-    text-decoration-color: #fdebf3;
+.title-link a:hover, .nav-links a:hover, a:focus {
+    text-decoration: underline #fdebf3;
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
 }
@@ -64,20 +74,18 @@ p {
 .nav-links {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1rem;
-    margin-top: .8rem;
+    margin-top: 0.8rem;
     text-align: center;
 }
 
 .nav-links a {
-    color: #fdebf3;
     margin: 0 15px;
-    text-decoration: none;
 }
 
-.nav-links a:hover, a:focus {
-    text-decoration: underline;
-    text-decoration-color: #375a7f;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 6px;
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 400px;
+    }
 }
 

@@ -5,6 +5,7 @@ const pageTitle = "Home";
 ---
 <Layout pageTitle={pageTitle}>
     <h1>Tristen Tomczak</h1>
+    <small>Digital Craftsman (Developer)</small>
     <h2>About</h2>
     <p>
         As a software developer with expertise in C# and TypeScript,
@@ -18,4 +19,36 @@ const pageTitle = "Home";
         If you're looking for a developer who can bring both technical expertise
         and strong communication skills to your team, please don't hesitate to reach out!
     </p>
+    <h2>Skills</h2>
+    <div class="link-images">
+        <img width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"/>
+        <img width="46" height="46" alt="DotNetCore" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
+        <img width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"/>
+        <img width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"/>
+        <img width="46" height="46" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"/>
+        <img width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
+        <img width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
+        <img width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
+        <img width="46" height="46" alt="PostGres" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"/>
+    </div>
+    <h2>Interests</h2>
+    <p>
+        As a software developer in Wisconsin, I enjoy spending time outdoors in the warmer months.
+        Walking, mountain biking, and disc golf are some of my favorite activities.
+        Recently, I've also taken up chess for its mental stimulation.
+        Disconnecting from technology and immersing myself in nature or games helps maintain a healthy work-life balance.
+    </p>
 </Layout>
+<style>
+    .link-images img {
+        margin: 16px 4px 4px 4px
+    }
+    @media only screen and (max-width: 600px) {
+        .link-images img {
+            height: 30px;
+            width: 30px;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    }
+</style>
