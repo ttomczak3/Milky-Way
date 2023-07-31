@@ -56,7 +56,6 @@ p {
 .title-link, .nav-links {
     font-family: 'Pacifico', cursive;
     font-size: 1.3rem;
-    text-align: center;
 }
 
 .title-link a, .nav-links a {
@@ -74,11 +73,19 @@ p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1rem;
     margin-top: 0.8rem;
-    text-align: center;
+    text-align: right;
 }
 
 .nav-links a {
     margin: 0 14px;
+}
+
+/* Card listing */
+.link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
 }
 
 /* Media Query */
@@ -86,11 +93,20 @@ p {
     body {
         width: 320px;
     }
+
     .nav-bar {
         display: initial;
     }
+
+    .title-link {
+        text-align: center;
+    }
+
+    .nav-links {
+        text-align: center;
+    }
+
     .nav-links a {
         margin: 0 8px;
     }
 }
-

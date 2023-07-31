@@ -4,4 +4,34 @@ import Card from '../components/Card.astro';
 const pageTitle = "Works";
 ---
 <Layout pageTitle={pageTitle}>
+    <div class="gif">
+        <img width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp"/>
+    </div>
+    <h2>Projects</h2>
+    <ul role="list" class="link-card-grid">
+        <Card
+            href="/ascent/"
+            image="/GitHub.webp"
+            title="The Ascent"
+            body="Three month long mid-degree school project developing a first-person shooter in Unity"
+        />
+        <Card
+            href="#"
+            image="/GitHub.webp"
+            title="Forgotten Roots"
+            body="2023 Central Florida Global Game Jam was a 7-day game jam where participants had to make a game based on the theme of Roots"
+        />
+        <Card
+            href="#"
+            image="/GitHub.webp"
+            title="Symbols"
+            body="A card game where when you play a card, you must draw the symbol on the card and the effectiveness of the card is based on how well you draw the symbol"
+        />
+        <Card
+            href="#"
+            image="/GitHub.webp"
+            title="Ludwig Jam"
+            body="Ludwig Jam is a 10-day game jam, where contestants will create games based on the theme"
+        />
+    </ul>
 </Layout>
