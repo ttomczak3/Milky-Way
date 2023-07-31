@@ -3,9 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 /* Global styles */
-body {
-    color: #fdebf3;
+html {
     background-color: #1e1e2e;
+    color: #fdebf3;
+}
+
+body {
     max-width: 540px;
     margin: 0 auto;
     text-align: justify;
@@ -72,12 +75,11 @@ p {
 .nav-links {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1rem;
-    margin-top: 0.8rem;
     text-align: right;
 }
 
 .nav-links a {
-    margin: 0 14px;
+    margin: 0 10px;
 }
 
 /* Card listing */
@@ -86,6 +88,24 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 1rem;
     padding: 0;
+}
+
+/* Theme Icon */
+html.light {
+    background-color: #fdebf3;
+    color: #1e1e2e;
+}
+
+.light .title-link a {
+    color: #1e1e2e;
+}
+
+.light .nav-links a {
+    color: #1e1e2e;
+}
+
+.light .link-card > a {
+    color: #1e1e2e; 
 }
 
 /* Media Query */
