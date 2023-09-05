@@ -1,6 +1,18 @@
 /* Import fonts */
-@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@font-face {
+    font-family: 'Pacifico';
+    src: url('/fonts/Pacifico-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Global styles */
 html {
@@ -79,7 +91,7 @@ p {
 }
 
 .nav-links a {
-    margin: 0 10px;
+    margin: 0 13px;
 }
 
 /* Card listing */
@@ -98,6 +110,14 @@ html.light {
 
 .light .title-link a {
     color: #1e1e2e;
+}
+
+.light .card-title {
+    color: #1e1e2e; 
+}
+
+.light .card-txt {
+    color: #1e1e2e; 
 }
 
 .light .nav-links a {
@@ -127,6 +147,6 @@ html.light {
     }
 
     .nav-links a {
-        margin: 0 8px;
+        margin: 0 11px;
     }
 }
