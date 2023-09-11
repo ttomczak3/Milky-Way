@@ -1,11 +1,13 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+import { fade } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html transition:animate="none" lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Astro description">
@@ -13,10 +15,29 @@ const { pageTitle } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+        <ViewTransitions />
 	</head>
 	<body>
         <Header />
-		<slot />
-        <Footer />
+        <main transition:animate={fade({ duration: '0.4s' })} >
+		    <slot />
+            <Footer />
+        </main>
+        <script>
+            function colorMode() {
+                if (
+                    localStorage.theme === "light" ||
+                    (!("theme" in localStorage) &&
+                    window.matchMedia("(prefers-color-scheme: light)").matches)
+                ) {
+                    document.documentElement.classList.add("light");
+                } else {
+                    document.documentElement.classList.remove("light");
+                }
+              }
+            
+            colorMode();
+            document.addEventListener('astro:after-swap', colorMode);
+        </script>
 	</body>
 </html>

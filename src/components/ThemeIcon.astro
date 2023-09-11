@@ -28,10 +28,10 @@
         if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
             return localStorage.getItem('theme');
         }
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            return 'dark';
+        if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            return 'light';
         }
-        return 'light';
+        return 'dark';
     })();
 
     if (theme === 'dark') {
@@ -46,8 +46,8 @@
         const element = document.documentElement;
         element.classList.toggle("light");
 
-        const isDark = element.classList.contains("light");
-        localStorage.setItem("theme", isDark ? "light" : "dark");
+        const isLight = element.classList.contains("light");
+        localStorage.setItem("theme", isLight ? "light" : "dark");
     }
 
     document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
