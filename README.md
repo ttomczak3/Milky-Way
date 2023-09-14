@@ -61,3 +61,8 @@ Contributions to this project are welcome. If you find a bug or have a suggestio
 
 ## 📃 License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## ☕ Support
+If you enjoy Milky-Way and would like to show your support and appreciation through a tip, I would gratefully accept it.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X0P7FGR)
