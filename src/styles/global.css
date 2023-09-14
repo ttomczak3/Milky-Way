@@ -112,6 +112,10 @@ html.light {
     color: #1e1e2e; 
 }
 
+.light button {
+    color: #1e1e2e;
+}
+
 /* Media Query */
 @media only screen and (max-width: 600px) {
     body {
