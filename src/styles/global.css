@@ -116,6 +116,10 @@ html.light {
     color: #1e1e2e;
 }
 
+.light button:hover {
+    color: #fdebf3;
+}
+
 /* Media Query */
 @media only screen and (max-width: 600px) {
     body {
