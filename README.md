@@ -5,7 +5,7 @@ This is a portfolio template built using CSS, HTML, JavaScript, and Astro. It se
   <img align="center" alt="Astro" src="https://astro.build/_astro/milky-way-hero@2x.16ef18b3.webp"/>
 </p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0b0bcb79-a1d8-4b32-9566-8f30af19e4cc/deploy-status)](https://app.netlify.com/sites/astro-milky-way/deploys)
+[![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build) [![Netlify Status](https://api.netlify.com/api/v1/badges/0b0bcb79-a1d8-4b32-9566-8f30af19e4cc/deploy-status)](https://app.netlify.com/sites/astro-milky-way/deploys)
 
 ## 🔥 Features
 - [x] Simple and clean design, perfect for showcasing your work.
