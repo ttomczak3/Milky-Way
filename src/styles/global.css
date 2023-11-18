@@ -78,6 +78,32 @@ p {
     margin: 0 13px;
 }
 
+/* Footer */
+.foot-btn {
+    display: flex;
+    padding: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.foot-btn:hover {
+    background-color: lightskyblue;
+}
+
+.light .foot-btn {
+    border: 5px solid black;
+}
+
+.git-icon {
+    content: url("/github-mark-white.svg");
+}
+
+.mail-icon {
+    content: url("/mail-white.svg");
+}
+
 /* Card listing */
 .link-card-grid {
     display: grid;
@@ -118,6 +144,14 @@ html.light {
 
 .light button:hover {
     color: #fdebf3;
+}
+
+.light .git-icon {
+    content: url("/github-mark.svg");
+}
+
+.light .mail-icon {
+    content: url("/mail.svg");
 }
 
 /* Media Query */
