@@ -104,6 +104,10 @@ p {
     content: url("/mail-white.svg");
 }
 
+.linked-in {
+    content: url("/li-in-white.png");
+}
+
 /* Card listing */
 .link-card-grid {
     display: grid;
@@ -152,6 +156,10 @@ html.light {
 
 .light .mail-icon {
     content: url("/mail.svg");
+}
+
+.light .linked-in {
+    content: url("/li-in.png");
 }
 
 /* Media Query */
