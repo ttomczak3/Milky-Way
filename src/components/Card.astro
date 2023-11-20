@@ -1,17 +1,25 @@
 ---
+import { Image } from 'astro:assets';
 interface Props {
     href: string;
     image: string;
     title: string;
     body: string;
+    badges: Array<string>;
 }
 
-const { href, image, title, body } = Astro.props;
+const { href, image, title, body, badges } = Astro.props;
+let hasBadges = badges[0] !== "" || badges === null
 ---
 <li class="link-card">
     <a href={href}>
         <div class="img">
             <img width="226" height="127" src={image} class="card-img" alt="ProjectImage">
+            <ul class="img-badges">
+                {hasBadges ? badges.map((badge) => (
+                    <li class="border"><img class="badge" width="24" height="24" src={badge}/></li>
+                )) : <p></p>}
+            </div>
         </div>
 	<h3 class="card-title">
 	    {title}
@@ -38,11 +46,35 @@ const { href, image, title, body } = Astro.props;
     }
 
     .img {
+        position: relative;
+        display: inline;
         text-align: center;
     }
 
     img {
         border-radius: 16px;
+        background-color: white;
+    }
+
+    .img-badges {
+        position: absolute;
+        bottom: 7px;
+        right: 4px;
+        list-style: none;
+    }
+
+    .border {
+        display: inline-block;
+        padding: 2px;
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: lightskyblue;
+    }
+
+    .badge {
+        padding: 2px;
     }
 
     h3 {
