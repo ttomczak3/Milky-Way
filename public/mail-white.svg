@@ -1,46 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   height="20"
-   viewBox="0 0 20 20"
-   width="20"
-   version="1.1"
-   id="svg2"
-   sodipodi:docname="mail-white.svg"
-   inkscape:version="1.3 (0e150ed, 2023-07-21)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="namedview2"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="11.8"
-     inkscape:cx="9.9576271"
-     inkscape:cy="9.9576271"
-     inkscape:window-width="1472"
-     inkscape:window-height="826"
-     inkscape:window-x="0"
-     inkscape:window-y="37"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg2" />
-  <path
-     d="m1.4 6.5 8.6 4.5 8.6-4.5"
-     fill="none"
-     stroke="#000"
-     id="path1" />
-  <path
-     d="m1 4v12h18v-12zm17 11h-16v-10h16z"
-     id="path2" />
-  <path
-     style="fill:#ffffff;stroke-width:0.172961"
-     d="M 1.059322,10 V 4.0677966 H 10 18.940678 V 10 15.932203 H 10 1.059322 Z m 16.949153,1.177374 c 0,-3.5729349 -0.0095,-3.818991 -0.145034,-3.7669716 -0.07977,0.03061 -1.862608,0.9557978 -3.961865,2.0559726 C 11.802319,10.56655 10.04661,11.466517 10,11.466303 9.9533898,11.466088 8.1978635,10.566016 6.0988303,9.466141 3.999797,8.3662664 2.2169581,7.4412543 2.1369658,7.4105584 2.0008671,7.3583325 1.9915254,7.6002773 1.9915254,11.177374 V 15 H 10 18.008475 Z M 15.488446,7.6271186 18.007061,6.3135593 18.007768,5.6567797 18.008475,5 H 10 1.9915254 l 0.00181,0.6567797 0.00181,0.6567796 4.002428,2.0897404 L 10,10.49304 11.484914,9.7168591 c 0.816704,-0.4268996 2.618293,-1.3672828 4.003532,-2.0897405 z"
-     id="path3" />
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+	<title>mail-white-svg</title>
+	<style>
+		.s0 { fill: #fdebf3 } 
+	</style>
+	<path id="path2" fill-rule="evenodd" class="s0" d="m19 4v12h-18v-12zm-1 1h-16v10h16z"/>
+	<path id="path3" fill-rule="evenodd" class="s0" d="m1.1 4.1h17.8v11.8h-17.8zm16.9 7.1c0-3.5 0-3.8-0.1-3.7-0.1 0-1.9 0.9-4 2-2.1 1.1-3.9 2-3.9 2 0 0-1.8-0.9-3.9-2-2.1-1.1-3.9-2-4-2-0.1-0.1-0.1 0.2-0.1 3.7v3.9h16zm-2.5-3.6l2.5-1.3v-1.3h-16v1.3l4 2.1 4 2.1 1.5-0.8c0.8-0.4 2.6-1.4 4-2.1z"/>
 </svg>

@@ -85,15 +85,15 @@ p {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid #fdebf3;
 }
 
 .foot-btn:hover {
-    background-color: #375a7f;
+    border-color: #78c2ad;
 }
 
 .light .foot-btn {
-    border: 2px solid black;
+    border: 2px solid #1e1e2e;
 }
 
 .git-icon {
@@ -148,6 +148,10 @@ html.light {
 
 .light .button:hover {
     color: #fdebf3;
+}
+
+.light .foot-btn:hover {
+    border-color: #78c2ad;
 }
 
 .light .git-icon {
