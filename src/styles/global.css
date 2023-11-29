@@ -81,19 +81,19 @@ p {
 /* Footer */
 .foot-btn {
     display: flex;
-    padding: 20px;
-    height: 30px;
-    width: 30px;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 2px solid white;
 }
 
 .foot-btn:hover {
-    background-color: lightskyblue;
+    background-color: #375a7f;
 }
 
 .light .foot-btn {
-    border: 5px solid black;
+    border: 2px solid black;
 }
 
 .git-icon {
