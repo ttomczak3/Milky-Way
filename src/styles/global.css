@@ -142,11 +142,11 @@ html.light {
     color: #1e1e2e; 
 }
 
-.light button {
+.light .button {
     color: #1e1e2e;
 }
 
-.light button:hover {
+.light .button:hover {
     color: #fdebf3;
 }
 
