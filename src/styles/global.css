@@ -89,7 +89,7 @@ p {
 }
 
 .foot-btn:hover {
-    background-color: #78c2ad;
+    border-color: #78c2ad;
 }
 
 .light .foot-btn {
