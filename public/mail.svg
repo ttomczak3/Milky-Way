@@ -1,8 +1,1 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
-	<title>mail-white-svg</title>
-	<style>
-		.s0 { fill: #1e1e2e } 
-	</style>
-	<path id="path2" fill-rule="evenodd" class="s0" d="m19 4v12h-18v-12zm-1 1h-16v10h16z"/>
-	<path id="path3" fill-rule="evenodd" class="s0" d="m1.1 4.1h17.8v11.8h-17.8zm16.9 7.1c0-3.5 0-3.8-0.1-3.7-0.1 0-1.9 0.9-4 2-2.1 1.1-3.9 2-3.9 2 0 0-1.8-0.9-3.9-2-2.1-1.1-3.9-2-4-2-0.1-0.1-0.1 0.2-0.1 3.7v3.9h16zm-2.5-3.6l2.5-1.3v-1.3h-16v1.3l4 2.1 4 2.1 1.5-0.8c0.8-0.4 2.6-1.4 4-2.1z"/>
-</svg>
+<svg height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m1.4 6.5 8.6 4.5 8.6-4.5" fill="none" stroke="#000"/><path d="m1 4v12h18v-12zm17 11h-16v-10h16z"/></svg>
