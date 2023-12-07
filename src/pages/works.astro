@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+const allProjects = await Astro.glob('../pages/projects/*.md');
+const allContributions = await Astro.glob('../pages/contributions/*.md');
 const pageTitle = "Works";
 ---
 <Layout pageTitle={pageTitle}>
@@ -9,44 +11,20 @@ const pageTitle = "Works";
     </div>
     <h2>Contributions</h2>
     <ul role="list" class="link-card-grid">
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Open-source 1"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Open-source 2"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
+        {allContributions.map((card) => <Card 
+            url={card.url} 
+            image={card.frontmatter.image.url} 
+            title={card.frontmatter.title} 
+            body={card.frontmatter.description}
+        />)}
     </ul>
     <h2>Projects</h2>
     <ul role="list" class="link-card-grid">
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Project 1"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Project 2"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Project 3"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Project 4"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
+        {allProjects.map((card) => <Card 
+            url={card.url} 
+            image={card.frontmatter.image.url} 
+            title={card.frontmatter.title} 
+            body={card.frontmatter.description}
+        />)}
     </ul>
 </Layout>

@@ -1,0 +1,55 @@
+---
+import BaseLayout from './Layout.astro';
+const { frontmatter } = Astro.props;
+---
+<BaseLayout pageTitle={frontmatter.title}>
+    <div class="gif">
+        <img width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp"/>
+    </div>
+    <h2>{frontmatter.title}</h2>
+    <slot />
+    <p><small>PLATFORM</small>{frontmatter.platform}</p>
+    <p><small>STACK</small>{frontmatter.stack}</p>
+    <p><small>WEBSITE</small><a href={frontmatter.website} target="_blank">{frontmatter.website}</a></p>
+    <p><small>GITHUB</small><a href={frontmatter.github} target="_blank">{frontmatter.github}</a></p>
+    <div class="img">
+        <img src={frontmatter.worksImage1.url} alt={frontmatter.worksImage1.alt} />
+        <img src={frontmatter.worksImage2.url} alt={frontmatter.worksImage2.alt} />
+    </div>
+</BaseLayout>
+<style>
+    .img {
+        text-align: center;
+    }
+
+    img {
+        border-radius: 16px;
+        margin-top: 10px;
+    }
+
+    small {
+        background-color: #584966;
+        color: #fdebf3;
+        border-radius: 6px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 0.7em;
+        font-weight: 600;
+        margin-right: 5px;
+        padding: 0.3em 0.3em;
+    }
+
+    a {
+        color: #78c2ad;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 600px) {
+        img {
+            width: 300px;
+        }
+    }
+</style>
