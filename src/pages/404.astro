@@ -1,0 +1,44 @@
+---
+const description = "404";
+import '../styles/global.css';
+---
+<section class="container404"></section>
+<div class="gif">
+    <img width="300" height="259" alt="Raccoon404Gif" src="/404.webp"/>
+</div>
+<h1>{ description }</h1>
+<span>It seems like you've wandered into the wrong forest!</span>
+<p>
+    <a href="/">Return Home</a>
+</p>
+<style>
+    body {
+        text-align: center;
+    }
+
+    .container404 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 16%;
+    }
+
+    h1 {
+        margin: 0 auto;
+        text-align: center;
+        border: 0;
+        font-size: 120px;
+        letter-spacing: 10px;
+
+    }
+
+    span {
+        color: #5C5B77;
+    }
+
+    a {
+        color: #78c2ad;
+        text-decoration: none;
+    }
+</style>
