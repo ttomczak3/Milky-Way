@@ -166,6 +166,10 @@ html.light {
     content: url("/li-in.png");
 }
 
+.light .page-link {
+    color: #375a7f;
+}
+
 /* Media Query */
 @media only screen and (max-width: 600px) {
     body {
