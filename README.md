@@ -40,13 +40,13 @@ Edit the HTML files in the `src/pages` directory to add your projects, experienc
 ```
 /
 ├── public/
-│   └── blog.png
+│   └── GitHub.webp
+│   └── blog-post.webp
 │   └── blog.webp
 │   └── favicon.svg
-│   └── GitHub.webp
 │   └── laptop.webp
 │   └── space.webp
-│   └── youtube.png
+│   └── youtube.webp
 ├── src/
 │   ├── components/
 │   ├── content/
