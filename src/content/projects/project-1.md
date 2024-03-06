@@ -1,6 +1,5 @@
 ---
-layout: ../../layouts/MarkdownWorksLayout.astro
-title: 'Open-source 1'
+title: 'Project 1'
 description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
 image:
     url: '/GitHub.webp'
