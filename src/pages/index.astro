@@ -7,7 +7,7 @@ const pageTitle = "Milky-Way";
         <img width="300" height="259" alt="RaccoonSpaceGif" src="/space.webp"/>
     </div>
     <h1>Milky-Way</h1>
-    <small>Digital Craftsman (Developer)</small>
+    <span class="badge">Digital Craftsman (Developer)</span>
     <h2>About</h2>
     <p>
         Praesent malesuada mi nisi, quis tempus magna venenatis ut.
@@ -24,22 +24,22 @@ const pageTitle = "Milky-Way";
         facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
         Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
     </p>
-    <div class="button">
+    <div class="center">
         <a href="/works/">
-            <button class="button">My portfolio</button>
+            <button class="btn">My portfolio</button>
         </a>
     </div>
     <h2>Skills</h2>
-    <div class="link-images">
-        <img width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"/>
-        <img width="46" height="46" alt="DotNetCore" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
-        <img width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
-        <img width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"/>
-        <img width="46" height="46" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"/>
-        <img width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
-        <img width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
-        <img width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
-        <img width="46" height="46" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
+    <div class="skills center">
+        <img class="skills__img" width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="DotNetCore" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
     </div>
     <h2>Interests</h2>
     <p>
@@ -49,48 +49,4 @@ const pageTitle = "Milky-Way";
         Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
     </p>
 </Layout>
-<style>
-    /* small */
-    small {
-        background-color: #584966;
-        color: #fdebf3;
-        border-radius: 6px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 600;
-        padding: 0.3em 0.6em 0.2em;
-    }
 
-    /* Button */
-    button {
-        background: rgba(0,0,0,0);
-        border: 2px solid #78c2ad;
-        border-radius: 8px;
-        color: #fdebf3;
-        font: 600 16px 'Josefin Sans', sans-serif;
-        padding: 8px 16px;
-        transition: background-color 0.4s, color 0.4s;
-    }
-
-    button:hover {
-        background-color: #78c2ad;
-        color: #1e1e2e;
-        cursor: pointer;
-    }
-
-    .button {
-        text-align: center;
-    }
-
-    /* Skill images */
-    .link-images img {
-        margin: 16px 4px;
-    }
-
-    @media only screen and (max-width: 600px) {
-        .link-images img {
-            height: 30px;
-            width: 30px;
-            margin: 16px 1px;
-        }
-    }
-</style>

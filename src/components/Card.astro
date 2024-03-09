@@ -8,60 +8,17 @@ interface Props {
 
 const { url, image, title, body } = Astro.props;
 ---
-<li class="link-card">
-    <a href={url}>
-        <div class="img">
-            <img width="226" height="127" src={image} class="card-img" alt="ProjectImage">
+<li class="card">
+    <a class="card__link" href={url}>
+        <div class="center">
+            <img class="card__img" width="226" height="127" src={image} alt="ProjectImage">
         </div>
-	<h3 class="card-title">
-	    {title}
-	</h3>
-	<p class="card-txt">
-	    {body}
+        <h3 class="card__title">
+            {title}
+        </h3>
+        <p class="card__txt">
+            {body}
         </p>
     </a>
 </li>
-<style>
-    .link-card {
-        list-style: none;
-        display: flex;
-        background-size: 400%;
-        padding: 20px;
-    }
 
-    .link-card > a {
-        width: 100%;
-        text-decoration: none;
-        line-height: 1.4;
-        border-radius: 8px;
-        color: #fdebf3;
-    }
-
-    .img {
-        text-align: center;
-    }
-
-    img {
-        border-radius: 16px;
-    }
-
-    h3 {
-        margin: 0;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 1.5rem;
-        font-weight: normal;
-        text-align: center;
-    }
-
-    p {
-        font-size: 1em;
-        line-height: 1.5;
-        text-indent: 0;
-        text-align: center;
-        margin: 0.5rem 0 0;
-    }
-
-    .link-card:hover {
-        transform: scale(1.05);
-    }
-</style>
