@@ -8,10 +8,12 @@ const { frontmatter } = Astro.props;
     </div>
     <h2>{frontmatter.title}</h2>
     <slot />
-    <p><span class="badge badge--item">PLATFORM</span>{frontmatter.platform}</p>
-    <p><span class="badge badge--item">STACK</span>{frontmatter.stack}</p>
-    <p><span class="badge badge--item">WEBSITE</span><a class="badge__link" href={frontmatter.website} target="_blank">{frontmatter.website}</a></p>
-    <p><span class="badge badge--item">GITHUB</span><a class="badge__link" href={frontmatter.github} target="_blank">{frontmatter.github}</a></p>
+    <ul class="badge__list">
+        <li><span class="badge badge--item">PLATFORM</span>{frontmatter.platform}</li>
+        <li><span class="badge badge--item">STACK</span>{frontmatter.stack}</li>
+        <li><span class="badge badge--item">WEBSITE</span><a class="badge__link" href={frontmatter.website} target="_blank">{frontmatter.website}</a></li>
+        <li><span class="badge badge--item">GITHUB</span><a class="badge__link" href={frontmatter.github} target="_blank">{frontmatter.github}</a></li>
+    </ul>
     <div class="center">
         <img class="pro-img" width="500px" height="281" src={frontmatter.worksImage1.url} alt={frontmatter.worksImage1.alt} />
         <img class="pro-img" width="500px" height="281" src={frontmatter.worksImage2.url} alt={frontmatter.worksImage2.alt} />

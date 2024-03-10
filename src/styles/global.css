@@ -1,7 +1,19 @@
 /* Global styles */
+:root {
+    --background: #1e1e2e; 
+    --background-light: #fdebf3;
+    --button: #78c2ad;
+    --text: #fdebf3;
+    --text-light: #1e1e2e; 
+    --text-link: #78c2ad;
+    --underline: #375a7f;
+    --header: 'Pacifico', cursive;
+    --body: 'Josefin Sans', sans-serif; 
+}
+
 html {
-    background-color: #1e1e2e;
-    color: #fdebf3;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 body {
@@ -11,34 +23,34 @@ body {
 }
 
 h1, h2 {
-    font-family: 'Pacifico', cursive;
+    font-family: var(--header);
     font-weight: normal;
 }
 
 h1 {
-    font-size: 2.6em;
+    font-size: 2.6rem;
     margin: 0;
     margin-bottom: 5px;
 }
 
 h2 {
-    text-decoration: underline #375a7f;
+    text-decoration: underline var(--underline);
     text-decoration-thickness: 4px;
     text-underline-offset: 6px;
-    font-size: 2.1em;
+    font-size: 2.1rem;
     margin-bottom: 0;
 }
 
 p {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.1em;
+    font-family: var(--body);
+    font-size: 1.1rem;
     hyphens: auto;
     line-height: 1.5;
-    text-indent: 1em;
+    text-indent: 1rem;
 }
 
-small {
-    font-family: 'Josefin Sans', sans-serif; 
+small, li {
+    font-family: var(--body); 
 }
 
 /* Navigation Bar */
@@ -49,27 +61,27 @@ small {
 }
 
 .navbar__title {
-    font-family: 'Pacifico', cursive;
+    font-family: var(--header);
     font-size: 1.3rem;
 }
 
 .navbar__menu {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--body);
     font-size: 1.1rem;
     text-align: right;
 }
 
-.navbar__title a, .navbar__menu a {
-    color: #fdebf3;
+.navbar__title > a, .navbar__menu > a {
+    color: var(--text);
     text-decoration: none;
 }
 
-.navbar__menu a {
+.navbar__menu > a {
     margin: 0 10px;
 }
 
-.navbar__title a:hover, .navbar__menu a:hover, .navbar__menu a:focus {
-    text-decoration: underline #375a7f;
+.navbar__title > a:hover, .navbar__menu > a:hover, .navbar__menu > a:focus {
+    text-decoration: underline var(--underline);
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
 }
@@ -83,22 +95,33 @@ small {
 /* Badge */
 .badge {
     background-color: #584966;
-    color: #fdebf3;
+    color: var(--text);
     border-radius: 6px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--body);
     font-weight: 600;
     font-size: .85rem;
     padding: 0.3em 0.6em 0.2em;
 }
 
+.badge__list {
+    text-indent: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.badge__list > li {
+    margin-top: 10px;
+}
+
 .badge--item {
-    font-size: 0.7em;
+    border-radius: 4px;
+    font-size: 0.7rem;
     margin-right: 5px;
-    padding: 0.3em 0.3em;
+    padding: 0.5em 0.3em 0.3em 0.3em;
 }
 
 .badge__link {
-    color: #78c2ad;
+    color: var(--text-link);
     text-decoration: none;
 }
 
@@ -119,7 +142,7 @@ small {
     text-decoration: none;
     line-height: 1.4;
     border-radius: 8px;
-    color: #fdebf3;
+    color: var(--text);
 }
 
 .card__img {
@@ -128,14 +151,14 @@ small {
 
 .card__title {
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--body);
     font-size: 1.5rem;
     font-weight: normal;
     text-align: center;
 }
 
 .card__txt {
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.5;
     text-indent: 0;
     text-align: center;
@@ -154,21 +177,21 @@ small {
 }
 
 /* Button */
-.btn:hover {
-    background-color: #78c2ad;
-    color: #1e1e2e;
-    cursor: pointer;
-}
-
 .btn {
     text-align: center;
     background: rgba(0,0,0,0);
-    border: 2px solid #78c2ad;
+    border: 2px solid var(--button);
     border-radius: 8px;
-    color: #fdebf3;
-    font: 600 16px 'Josefin Sans', sans-serif;
+    color: var(--text);
+    font: 600 16px var(--body);
     padding: 8px 16px;
     transition: background-color 0.4s, color 0.4s;
+}
+
+.btn:hover {
+    background-color: var(--button);
+    color: var(--text-light);
+    cursor: pointer;
 }
 
 /* Skills */
@@ -195,12 +218,12 @@ footer {
     margin: 4rem 0;
 }
 
-.menu__link {
-    color: #375a7f;
+.footer__link {
+    color: var(--text-link);
     text-decoration: none;
 }
 
-.menu {
+.footer {
     cursor: default;
     list-style: none;
     padding: 0;
@@ -221,7 +244,7 @@ footer {
 }
 
 .icon__link:hover {
-    border-color: #78c2ad;
+    border-color: var(--text-link);
 }
 
 
@@ -247,7 +270,7 @@ footer {
     margin: 0 auto;
     text-align: center;
     border: 0;
-    font-size: 120px;
+    font-size: 7.5rem;
     letter-spacing: 10px;
 }
 
@@ -256,46 +279,46 @@ footer {
 }
 
 .lost__link {
-    color: #78c2ad;
+    color: var(--text-link);
     text-decoration: none;
 }
 
 /* Theme Icon */
 html.light {
-    background-color: #fdebf3;
-    color: #1e1e2e;
+    background-color: var(--background-light);
+    color: var(--text-light);
 }
 
-.light .navbar__title a {
-    color: #1e1e2e;
+.light .navbar__title > a {
+    color: var(--text-light);
 }
 
-.light .navbar__menu a {
-    color: #1e1e2e;
+.light .navbar__menu > a {
+    color: var(--text-light);
 }
 
 .light .card__title {
-    color: #1e1e2e; 
+    color: var(--text-light); 
 }
 
 .light .card__txt {
-    color: #1e1e2e; 
+    color: var(--text-light); 
 }
 
 .light .btn {
-    color: #1e1e2e;
+    color: var(--text-light);
 }
 
 .light .btn:hover {
-    color: #fdebf3;
+    color: var(--text);
 }
 
 .light .icon__link {
-    border: 2px solid #1e1e2e;
+    border: 2px solid var(--text-light);
 }
 
 .light .icon__link:hover {
-    border-color: #78c2ad;
+    border-color: var(--text-link);
 }
 
 .light .git-icon {
@@ -311,13 +334,13 @@ html.light {
 }
 
 .light .badge__link {
-    color: #375a7f;
+    color: var(--text-link);
 }
 
 /* Media Query */
 @media only screen and (max-width: 600px) {
     body {
-        width: 320px;
+        width: 350px;
     }
 
     .navbar {
@@ -332,7 +355,7 @@ html.light {
         text-align: center;
     }
 
-    .navbar__menu a {
+    .navbar__menu > a {
         margin: 0 11px;
     }
 
@@ -342,13 +365,13 @@ html.light {
         margin: 8px 1px;
     }
 
-    .badge__link {
-        font-size: .7em;
+    .badge__list {
+        text-indent: 0;
     }
 
     .pro-img {
         height: auto;
-        width: 300px;
+        width: 350px;
     }
 }
 
