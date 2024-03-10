@@ -366,6 +366,7 @@ html.light {
     }
 
     .badge__list {
+        font-size: 0.9rem;
         text-indent: 0;
     }
 
