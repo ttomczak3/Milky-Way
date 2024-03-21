@@ -2,14 +2,16 @@
 const description = "404";
 import '../styles/global.css';
 ---
-<section class="lost">
-    <div class="gif">
-        <img width="300" height="259" alt="Raccoon404Gif" src="/404.webp"/>
+<layout>
+    <div class="lost">
+        <div class="gif">
+            <img width="300" height="259" alt="Raccoon404Gif" src="/404.webp"/>
+        </div>
+        <h1 class="lost__header">{ description }</h1>
+        <p class="lost__body">It seems like you've wandered into the wrong forest!</p>
+        <p>
+            <a class="lost__link" href="/">Return Home</a>
+        </p>
     </div>
-    <h1 class="lost__header">{ description }</h1>
-    <p class="lost__body">It seems like you've wandered into the wrong forest!</p>
-    <p>
-        <a class="lost__link" href="/">Return Home</a>
-    </p>
-</section>
+</layout>
 
