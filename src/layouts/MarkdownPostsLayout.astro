@@ -1,0 +1,20 @@
+---
+import BaseLayout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+    <div class="gif">
+        <img width="300" height="259" alt="RaccoonNotesGif" src="/blog.webp" />
+    </div>
+    <h2>{frontmatter.title}</h2>
+    <ul class="badge__list">
+        <li>
+            <span class="badge badge--item">AUTHOR</span>{frontmatter.author}
+        </li>
+        <li>
+            <span class="badge badge--item">PUBLISHED</span>{frontmatter.date}
+        </li>
+    </ul>
+    <slot />
+</BaseLayout>

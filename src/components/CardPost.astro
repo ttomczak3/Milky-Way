@@ -3,10 +3,10 @@ interface Props {
     url: string;
     image: string;
     title: string;
-    body: string;
+    date: string;
 }
 
-const { url, image, title, body } = Astro.props;
+const { url, image, title, date } = Astro.props;
 ---
 
 <li class="card">
@@ -17,14 +17,14 @@ const { url, image, title, body } = Astro.props;
                 width="226"
                 height="127"
                 src={image}
-                alt="ProjectImage"
+                alt="PostImage"
             />
         </div>
         <h3 class="card__title">
             {title}
         </h3>
         <p class="card__txt">
-            {body}
+            {date}
         </p>
     </a>
 </li>
