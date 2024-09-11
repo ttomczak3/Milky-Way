@@ -12,9 +12,13 @@ Aenean a ex et metus finibus malesuada commodo in magna. In ut libero urna. Aene
 ## Lorem
 Vivamus sed faucibus lorem. Aenean a lorem convallis, ultrices nisl vitae, imperdiet elit. Duis in tristique lacus. Quisque sollicitudin dolor ac dui faucibus, ut tincidunt velit blandit. Donec tincidunt metus eros, at dignissim enim blandit ut. Cras varius tincidunt tortor ac tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed a ipsum quis nulla commodo pretium. Ut sed sem bibendum, facilisis dolor sit amet, interdum nibh. Aliquam id auctor dolor. In nulla diam, mattis quis nisl et, aliquam interdum quam. Donec lobortis ex arcu, ac pharetra ante vehicula euismod. Donec finibus faucibus felis vitae facilisis.
 
-![Test Image](/image-1.webp)
+<div class="center">
+  <img class="pro-img" width="500px" height="281" src="/image-1.webp" alt="First Image" />
+</div>
 
 ## Ipsum
 Vivamus sed faucibus lorem. Aenean a lorem convallis, ultrices nisl vitae, imperdiet elit. Duis in tristique lacus. Quisque sollicitudin dolor ac dui faucibus, ut tincidunt velit blandit. Donec tincidunt metus eros, at dignissim enim blandit ut. Cras varius tincidunt tortor ac tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed a ipsum quis nulla commodo pretium. Ut sed sem bibendum, facilisis dolor sit amet, interdum nibh. Aliquam id auctor dolor. In nulla diam, mattis quis nisl et, aliquam interdum quam. Donec lobortis ex arcu, ac pharetra ante vehicula euismod. Donec finibus faucibus felis vitae facilisis.
 
-![Test Image](/image-2.webp)
+<div class="center">
+  <img class="pro-img" width="500px" height="281" src="/image-2.webp" alt="Second Image" />
+</div>
