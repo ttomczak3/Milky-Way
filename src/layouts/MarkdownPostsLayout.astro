@@ -7,7 +7,7 @@ const { frontmatter } = Astro.props;
     <div class="gif">
         <img width="300" height="259" alt="RaccoonNotesGif" src="/blog.webp" />
     </div>
-    <h2>{frontmatter.title}</h2>
+    <h2 style="text-decoration:none;">{frontmatter.title}</h2>
     <ul class="badge__list">
         <li>
             <span class="badge badge--item">AUTHOR</span>{frontmatter.author}
