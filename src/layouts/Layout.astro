@@ -1,6 +1,4 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
-import { fade } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
@@ -19,11 +17,10 @@ const { pageTitle } = Astro.props;
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap" rel="stylesheet">       
         <meta name="generator" content={Astro.generator} />
         <title>{pageTitle}</title>
-        <ViewTransitions />
 	</head>
 	<body>
         <Header />
-        <main transition:animate={fade({ duration: '0.2s' })} >
+        <main>
 	    <slot />
             <Footer />
         </main>
