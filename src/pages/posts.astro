@@ -15,7 +15,7 @@ const pageTitle = "Posts";
         {
             allPosts.map((cardPost) => (
                 <Card
-                    url={`/posts/${cardPost.slug}/`}
+                    url={`/posts/${cardPost.id}/`}
                     image={cardPost.data.image.url}
                     title={cardPost.data.title}
                     date={cardPost.data.date}

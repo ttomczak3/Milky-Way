@@ -1,7 +1,7 @@
 ---
 title: 'Post 4'
 author: Tristen Tomczak
-date: '09-09-2024'
+date: '03-23-202'
 image:
     url: '/blog-post.webp'
     alt: 'Post Thumbnail'
