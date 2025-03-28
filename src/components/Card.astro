@@ -14,10 +14,12 @@ const { url, image, title, body } = Astro.props;
         <div class="center">
             <img
                 class="card__img"
-                width="226"
-                height="127"
                 src={image}
                 role="presentation"
+                width="226"
+                height="127"
+                loading="lazy"
+                decoding="async"
             />
         </div>
         <h3 class="card__title">

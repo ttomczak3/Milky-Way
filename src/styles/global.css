@@ -55,10 +55,6 @@ li {
   font-family: var(--body);
 }
 
-img {
-  aspect-ratio: auto;
-}
-
 /* Navigation Bar */
 .navbar {
   display: grid;
@@ -258,15 +254,15 @@ footer {
 
 
 .git-icon {
-  content: url("/github-mark-white.svg");
+  content: url("/.netlify/images?url=/images/github-mark-white.svg");
 }
 
 .mail-icon {
-  content: url("/mail-white.svg");
+  content: url("/.netlify/images?url=/images/mail-white.svg");
 }
 
 .linked-in {
-  content: url("/li-in-white.png");
+  content: url("/.netlify/images?url=/images/li-in-white.png");
 }
 
 /* 404 */
@@ -331,15 +327,15 @@ html.light {
 }
 
 .light .git-icon {
-  content: url("/github-mark.svg");
+  content: url("/.netlify/images?url=/images/github-mark.svg");
 }
 
 .light .mail-icon {
-  content: url("/mail.svg");
+  content: url("/.netlify/images?url=/images/mail.svg");
 }
 
 .light .linked-in {
-  content: url("/li-in.png");
+  content: url("/.netlify/images?url=/images/li-in.png");
 }
 
 .light .badge__link {
