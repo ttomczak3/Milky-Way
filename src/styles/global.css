@@ -346,7 +346,7 @@ html.light {
   color: var(--text-link-light);	
 }
 
-.icon__link:hover {
+.light .icon__link:hover {
   border-color: var(--text-link-light);
 }
 
