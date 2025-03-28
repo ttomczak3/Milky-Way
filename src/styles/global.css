@@ -1,11 +1,12 @@
 /* Global styles */
 :root {
   --background: #1e1e2e;
-  --background-light: #fdebf3;
+  --background-light: #fafafa;
   --button: #78c2ad;
-  --text: #fdebf3;
+  --text: #eff1f5;
   --text-light: #1e1e2e;
   --text-link: #78c2ad;
+  --text-link-light: #3d7aed;
   --underline: #375a7f;
   --header: 'Pacifico', cursive;
   --body: 'Josefin Sans', sans-serif;
@@ -339,7 +340,11 @@ html.light {
 }
 
 .light .badge__link {
-  color: var(--text-link);
+  color: var(--text-link-light);
+}
+
+.light .footer__link {
+  color: var(--text-link-light);	
 }
 
 /* Media Query */
