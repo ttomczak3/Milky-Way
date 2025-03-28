@@ -253,7 +253,6 @@ footer {
   border-color: var(--text-link);
 }
 
-
 .git-icon {
   content: url("/.netlify/images?url=/images/github-mark-white.svg");
 }
@@ -345,6 +344,10 @@ html.light {
 
 .light .footer__link {
   color: var(--text-link-light);	
+}
+
+.icon__link:hover {
+  border-color: var(--text-link-light);
 }
 
 /* Media Query */
