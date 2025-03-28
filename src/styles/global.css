@@ -55,10 +55,6 @@ li {
   font-family: var(--body);
 }
 
-img {
-  aspect-ratio: auto;
-}
-
 /* Navigation Bar */
 .navbar {
   display: grid;

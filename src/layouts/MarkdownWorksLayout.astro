@@ -4,7 +4,7 @@ const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
     <div class="gif">
-        <img width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp"/>
+        <img width="300" height="259" role="presentation" src="/laptop.webp"/>
     </div>
     <h2>{frontmatter.title}</h2>
     <slot />
