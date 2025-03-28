@@ -1,12 +1,12 @@
 /* Global styles */
 :root {
   --background: #1e1e2e;
-  --background-light: #fafafa;
+  --background-light: #f0e7db;
   --button: #78c2ad;
   --text: #eff1f5;
   --text-light: #1e1e2e;
   --text-link: #78c2ad;
-  --text-link-light: #04a5e5;
+  --text-link-light: #1e66f5;
   --underline: #375a7f;
   --header: 'Pacifico', cursive;
   --body: 'Josefin Sans', sans-serif;
