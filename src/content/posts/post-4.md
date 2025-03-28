@@ -1,7 +1,7 @@
 ---
 title: 'Post 4'
 author: Tristen Tomczak
-date: '03-23-202'
+date: '03-23-2025'
 image:
     url: '/.netlify/images?url=/images/blog-post.webp'
     alt: 'Post Thumbnail'
